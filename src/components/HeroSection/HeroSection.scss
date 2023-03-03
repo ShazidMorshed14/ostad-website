@@ -1,0 +1,221 @@
+.hero_section_wrapper {
+  height: 333px;
+  //   border: 1px solid black;
+  background: url(https://res.cloudinary.com/aventra/image/upload/v1677844171/sincerely-media-HoEYgBL-Gcs-unsp_i0u2nt.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: lightgray;
+
+  .inner-frame {
+    /* Auto layout */
+    //margin-top: 4.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    position: absolute;
+
+    margin-left: 150px;
+    margin-top: 33px;
+
+    .description-section {
+      h1 {
+        color: #101828;
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 130%;
+      }
+
+      p {
+        color: #1d2939;
+        font-weight: 400;
+      }
+      .buttons-section {
+        display: flex;
+
+        .each-button {
+          background: #e9efff;
+          border-radius: 4px;
+          padding: 4px 8px;
+          margin-right: 16px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          cursor: pointer;
+          font-family: "Hind Siliguri", sans-serif;
+          img {
+            margin-right: 5px;
+          }
+        }
+      }
+
+      .big-buttons-section {
+        display: flex;
+        margin: 24px 0em;
+        .single-button {
+          background: #101828;
+          border-radius: 8px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          padding: 12px 24px;
+          color: #ffffff;
+          margin-right: 16px;
+          cursor: pointer;
+          font-weight: 600;
+          transition: 0.1s ease-in;
+
+          img {
+            margin-left: 0.5em;
+          }
+        }
+        .single-button-updated {
+          background: #f9f9fa;
+          border: 1px solid #101828;
+          border-radius: 8px;
+          color: #101828;
+          padding: 12px 24px;
+          /* Auto layout */
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-weight: 600;
+          cursor: pointer;
+          transition: 0.1s ease-in;
+        }
+
+        .single-button-updated:hover {
+          background-color: #ffe699;
+        }
+
+        .single-button:hover {
+          background-color: #ffc000;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .hero_section_wrapper {
+    height: 500px;
+    //border: 1px solid black;
+    background: url(https://res.cloudinary.com/aventra/image/upload/v1677848336/mobile-banner_peycmd.jpg);
+    background-position: center;
+    background-size: cover;
+    background-color: lightgray;
+
+    .inner-frame {
+      /* Auto layout */
+      margin-top: 4.5em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 24px;
+
+      margin-left: 16px;
+      margin-top: 10px;
+
+      .description-section {
+        h1 {
+          color: #101828;
+          font-family: "Hind Siliguri";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 30px;
+          line-height: 130%;
+        }
+
+        p {
+          color: #1d2939;
+          font-weight: 400;
+          font-size: small;
+          padding-right: 10px;
+        }
+        .buttons-section {
+          display: flex;
+
+          .each-button {
+            background: #e9efff;
+            border-radius: 4px;
+            padding: 4px 8px;
+            margin-right: 16px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-size: small;
+            cursor: pointer;
+
+            img {
+              margin-right: 5px;
+            }
+          }
+        }
+
+        .big-buttons-section {
+          display: flex;
+          flex-direction: column;
+
+          margin: 24px 0em;
+          .single-button {
+            background: #101828;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 24px;
+            color: #ffffff;
+            margin-right: 16px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: 0.1s ease-in;
+
+            width: 90%;
+            height: 48px;
+            margin-bottom: 0.5em;
+
+            img {
+              margin-left: 0.5em;
+            }
+          }
+          .single-button-updated {
+            background: #f9f9fa;
+            border: 1px solid #101828;
+            border-radius: 8px;
+            color: #101828;
+            padding: 12px 24px;
+            /* Auto layout */
+            width: 90%;
+            height: 48px;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.1s ease-in;
+          }
+
+          .single-button-updated:hover {
+            background-color: #ffe699;
+          }
+
+          .single-button:hover {
+            background-color: #ffc000;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+.career_guideline_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  height: 30em;
+  width: 100%;
+  background: #101828;
+
+  .inner-section {
+    //border: 1px solid white;
+    height: 100%;
+    width: 80%;
+    margin: 1em 140px;
+    position: relative;
+    .back-button {
+      position: absolute;
+      top: 50%;
+      left: -60px;
+      cursor: pointer;
+    }
+    .forward-button {
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      cursor: pointer;
+    }
+
+    .heading-section {
+      //border: 1px solid pink;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 1em 0em;
+
+      h3 {
+        color: #ffffff;
+        line-height: 33.8px;
+        margin-left: 16px;
+        transform: translateY(5px);
+      }
+    }
+
+    .slider-section {
+      //border: 1px solid red;
+      height: 75%;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .bottom-nav-section {
+      display: none;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .career_guideline_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 550px;
+    width: 100%;
+    background: #101828;
+
+    .back-button {
+      display: none;
+    }
+
+    .forward-button {
+      display: none;
+    }
+
+    .inner-section {
+      //border: 1px solid white;
+      height: 100%;
+      width: 100%;
+      margin: 10px 0px;
+
+      .bottom-nav-section {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+
+        .bottom-buttons {
+          display: flex;
+          margin-top: 24px;
+          gap: 20px;
+        }
+      }
+
+      .slider-section {
+        //border: 1px solid red;
+        height: 65%;
+        width: 100%;
+        overflow: hidden;
+      }
+    }
+  }
+}

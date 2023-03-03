@@ -1,0 +1,84 @@
+.career_box_wrapper {
+  height: 90%;
+  //border: 1px solid gold;
+  padding: 0.5em;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .bottom-section {
+    height: 120px;
+    //border: 1px solid green;
+    background-color: #1d2939;
+    transform: translateY(-15px);
+
+    .heading-section {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      color: #ffffff;
+      margin-left: 0.5em;
+      img {
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+      }
+
+      p {
+        font-size: 16px;
+        transform: translateY(9px);
+      }
+    }
+
+    .instructor-section {
+      margin-left: 0.5em;
+      display: flex;
+      .ins-img {
+        img {
+          height: 40px;
+          width: 40px;
+        }
+      }
+
+      .ins-desc {
+        display: flex;
+        flex-direction: column;
+        // border: 1px solid yellow;
+        height: 40px;
+        margin-left: 0.5em;
+        .big_one {
+          margin: 0px !important;
+          padding: 0 !important;
+          p {
+            font-family: "Hind Siliguri";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #ffffff;
+            margin: 0px !important;
+          }
+        }
+
+        .small_one {
+          margin: 0;
+          padding: 0;
+          p {
+            font-family: "Hind Siliguri";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .career_box_wrapper {
+    height: 300px;
+  }
+}
