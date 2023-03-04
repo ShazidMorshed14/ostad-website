@@ -1,0 +1,71 @@
+.career_guiding_box_wrapper {
+  height: 90%;
+  //border: 1px solid gold;
+  padding: 0.5em;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .bottom-section {
+    height: auto;
+    //border: 1px solid green;
+    background-color: #ffffff;
+    transform: translateY(-17px);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 16px;
+
+    .top_title {
+      color: #475467;
+      font-weight: 500;
+      font-family: "Hind Siliguri", sans-serif;
+    }
+    .second_title {
+      color: #050400;
+      font-weight: 700;
+      font-family: "Hind Siliguri", sans-serif;
+      height: 58px;
+      color: #1d2939;
+      font-size: 20;
+    }
+
+    .icons_section {
+      display: flex;
+      img {
+        width: 14px;
+        height: 14px;
+        margin-right: 5px;
+      }
+
+      .each_secion {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+        color: #475467;
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.guideline_box_inner_wrapper {
+  transition: 0s ease-in;
+  border-radius: 7px;
+}
+
+.guideline_box_inner_wrapper:hover {
+  border: 1px solid gold;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .career_guiding_box_wrapper {
+    height: 300px;
+  }
+}

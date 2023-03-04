@@ -1,0 +1,58 @@
+.branding_wrapper {
+  margin: 4em 0em;
+  height: 225px;
+  background: #101828;
+  color: #ffffff;
+  text-align: center;
+  //padding: 0px 24px;
+  p {
+    font-family: "Hind Siliguri";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 0.5rem 0em;
+  }
+
+  .boxes {
+    //outline: 1px solid hotpink;
+    //padding: 2px;
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(min(30%), 1fr));
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+
+    .box {
+      //outline: 1px solid yellow;
+      margin: 10px;
+      height: 96px;
+      width: 175px;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      background-color: #ffffff;
+      padding: 0.5rem;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        border-radius: 7px 7px 0px 0px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .branding_wrapper {
+    .boxes {
+      display: flex;
+      overflow-x: scroll;
+      padding: 0px;
+
+      .box {
+        //outline: 2px solid yellow;
+        margin: 10px;
+        height: 96px;
+        min-width: 175px;
+      }
+    }
+  }
+}

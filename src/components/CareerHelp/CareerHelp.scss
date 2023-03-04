@@ -1,0 +1,65 @@
+.career_help_wrapper {
+  .top_section {
+    color: #101828;
+    margin: 2em 140px;
+    .top-section-up {
+      display: flex;
+
+      justify-content: flex-start;
+      img {
+        width: 40px;
+        height: 40px;
+        margin-right: 16px;
+      }
+
+      h1 {
+        font-family: "Hind Siliguri", sans-serif !important;
+        font-size: 36px;
+        transform: translateY(0px);
+        color: #101828;
+      }
+    }
+
+    p {
+      font-family: "Hind Siliguri";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #101828;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .career_help_wrapper {
+    .top_section {
+      color: #101828;
+      margin: 2em 20px;
+      .top-section-up {
+        display: flex;
+
+        justify-content: flex-start;
+        img {
+          width: 25px;
+          height: 25px;
+          margin-right: 16px;
+        }
+
+        h1 {
+          font-family: "Hind Siliguri", sans-serif !important;
+          font-size: 20px;
+          transform: translateY(5px);
+          color: #101828;
+        }
+      }
+
+      p {
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 400;
+        font-size: small;
+        color: #101828;
+      }
+    }
+  }
+}

@@ -6,6 +6,7 @@
   img {
     object-fit: contain;
     width: 100%;
+    transition: 0.1s ease-in;
   }
 
   .bottom-section {
@@ -13,6 +14,7 @@
     //border: 1px solid green;
     background-color: #1d2939;
     transform: translateY(-15px);
+    transition: 0.1s ease-in;
 
     .heading-section {
       display: flex;
@@ -75,6 +77,17 @@
       }
     }
   }
+}
+
+.grabber-section {
+  transition: 0.1s ease-in;
+}
+
+.grabber-section:hover {
+  outline: 1px solid gold;
+  border-radius: 7px;
+  background-color: #333;
+  opacity: 0.8;
 }
 
 @media only screen and (max-width: 900px) {

@@ -1,0 +1,128 @@
+.custom_grid_view_wrapper {
+  background-color: #ffffff;
+  margin: 0em 0em;
+  padding: 0px 0px;
+
+  .boxes {
+    //outline: 1px solid hotpink;
+    padding: 2px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(50%), 1fr));
+    overflow: hidden;
+    .box {
+      //outline: 1px solid yellow;
+      margin: 10px;
+      height: auto;
+      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+      border-radius: 7px;
+      padding: 0.5em;
+      cursor: pointer;
+      transition: 0.5s ease-in;
+
+      img {
+        object-fit: contain;
+        width: 100%;
+        border-radius: 7px 0px 0px 7px;
+      }
+
+      .top_button {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 4px 8px;
+        gap: 4px;
+        width: 103px;
+        margin-top: 1rem;
+
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+
+        background: #e9efff;
+        border-radius: 4px;
+
+        img {
+          width: 10px;
+          height: 10px;
+        }
+      }
+
+      .second_heading {
+        height: 38px;
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.8rem;
+        color: #101828;
+        margin: 1rem 0em;
+      }
+
+      .fb_btn {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 8px 24px;
+
+        width: 99%;
+        height: 40px;
+
+        background: #eaecf0;
+        border-radius: 6px;
+        font-family: "Hind Siliguri";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.6rem;
+
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+
+        color: #101828;
+
+        img {
+          width: 15px;
+          height: 15px;
+          margin-left: 10px;
+          transform: translateY(-1px);
+        }
+      }
+    }
+
+    .box:hover {
+      border: 1px solid blue;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+      #change_img_1 {
+        content: url("https://res.cloudinary.com/aventra/image/upload/v1677888228/community_thumb_4_meqydw.png");
+      }
+      #change_img_2 {
+        content: url("https://res.cloudinary.com/aventra/image/upload/v1677888229/community_thumb_3_iwua10.png");
+      }
+      #change_img_3 {
+        content: url("https://res.cloudinary.com/aventra/image/upload/v1677888228/community_thumb_2_btbsvs.png");
+      }
+      #change_img_4 {
+        content: url("https://res.cloudinary.com/aventra/image/upload/v1677888228/community_thumb_1_q1hdwi.png");
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .custom_grid_view_wrapper {
+    .boxes {
+      display: flex;
+      overflow-x: scroll;
+      padding: 0px;
+
+      .box {
+        //outline: 2px solid yellow;
+        margin: 10px;
+        height: auto;
+        min-width: 80%;
+      }
+    }
+  }
+}

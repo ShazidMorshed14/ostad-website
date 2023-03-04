@@ -1,17 +1,22 @@
 import React from "react";
-import "../CareerHelp/CareerHelp.scss";
+import "../JoinCommunity/JoinCommunity.scss";
 import FlagIcon from "../../images/icons/flag_icon.png";
 import LiveIcon from "../../images/icons/live_icon.png";
+import CommunityIcon from "../../images/icons/community_icon.png";
 import GridViews from "../GridViews/GridViews";
 import WorkShopIcon from "../../images/icons/workshop.png";
+import CustomGridView from "../CustomGridView/CustomGridView";
 
-const CareerHelp = () => {
+const JoinCommunity = () => {
   return (
-    <div className="career_help_wrapper">
-      <div className="top_section custom-margin">
+    <div className="join_community_wrapper">
+      <div
+        className="top_section custom-margin"
+        style={{ padding: "1rem 0em" }}
+      >
         <div className="top-section-up">
-          <img src={FlagIcon} alt={FlagIcon} />
-          <h1>Ostad helps you in your career with</h1>
+          <img src={CommunityIcon} alt={CommunityIcon} />
+          <h1>জয়েন করুন আমাদের কমিউনিটিতে</h1>
         </div>
         <p>
           স্কিল ডেভেলপ করুন দেশের সেরা ইন্সট্রাক্টরদের সাথে, ক্লিক করুন নিচের
@@ -23,24 +28,14 @@ const CareerHelp = () => {
         className="grid-sections custom-margin"
         style={{ borderRadius: "7px" }}
       >
-        <GridViews
+        <CustomGridView
           headingIcon={LiveIcon}
           headingText={"লাইভ কোর্সসমূহ"}
-          totalBox={6}
-        />
-      </div>
-      <div
-        className="grid-sections custom-margin"
-        style={{ borderRadius: "7px" }}
-      >
-        <GridViews
-          headingIcon={WorkShopIcon}
-          headingText={"ওয়ার্কশপ"}
-          totalBox={3}
+          totalBox={4}
         />
       </div>
     </div>
   );
 };
 
-export default CareerHelp;
+export default JoinCommunity;
